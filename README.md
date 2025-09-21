@@ -1,9 +1,24 @@
-# CRUD Back-End com Node.js e Express
+# CRUD Backend com Node.js e Express
 
-Este projeto é um **back-end simples** usando **arrays** como banco de dados em memória, com **CRUD completo** via API.
+API simples utilizando **array** como armazenamento de dados, implementando operações CRUD.
 
-## Rodando o servidor
+---
 
-1. Clone o repositório:
+## Rotas da API
+
+| Método | Rota                   | Body (JSON)                     | Descrição                        |
+|--------|-----------------------|--------------------------------|---------------------------------|
+| GET    | `/`                   | -                              | Mensagem de boas-vindas          |
+| GET    | `/items`              | -                              | Lista todos os itens             |
+| POST   | `/items`              | `{ "name": "Nome do item" }`  | Cria um novo item                |
+| GET    | `/items/:id`          | -                              | Busca item pelo ID               |
+| PUT    | `/items/:id`          | `{ "name": "Novo nome" }`     | Atualiza item pelo ID            |
+| DELETE | `/items/:id`          | -                              | Deleta item pelo ID              |
+
+---
+
+## Como rodar o projeto
+
+1. Instalar dependências:
 ```bash
-git clone https://github.com/Joao356-bit/crud-backend.git
+npm install
