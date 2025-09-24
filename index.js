@@ -5,7 +5,7 @@ app.use(express.json());
 let items = [];
 
 app.get("/", (req, res) => {
-  res.send("Bem-vindo à API CRUD com Node.js e Express 🚀 Use /items para começar.");
+  res.send("Bem-vindo à API CRUD com Node.js e Express Use /items para começar.");
 });
 
 app.post("/items", (req, res) => {
